@@ -19,7 +19,7 @@ while True:
             print()
     print()
 
-    # good
+# good
 while True:
     h, w = input().split()
     h, w = int(h), int(w)
