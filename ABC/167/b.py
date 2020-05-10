@@ -22,8 +22,8 @@
 
 
 # answer
-a,b,c,k = map(int,input().split())
-xa = min(a,k)
+a, b, c, k = map(int, input().split())
+xa = min(a, k)
 k -= xa
 xb = min(b, k)
 k -= xb
