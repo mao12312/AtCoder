@@ -22,39 +22,10 @@
 
 
 # answer
-import sys
-
-sys.setrecursionlimit(10 ** 9)
-input = sys.stdin.readline
-
-""" Input
-S = input().rstrip()
-N = int(input())
-N, A, B = map(int, input().split())
-A = list(map(int, input().split()))
-A = np.array(input().split(), dtype=np.float64)
-D = [int(input()) for _ in range(N)]
-AB = [[int(x) for x in input().split()] for _ in range(N)]
-PX = [[int(x) for x in input().split()] for _ in range(Q)]
-"""
-
-A, B, C, K = map(int, input().split())
-
-total = 0
-if K >= A:
-    total += 1 * A
-    K -= A
-    if K >= B:
-        total += 0 * B
-        K -= B
-        if K >= C:
-            total += (-1) * C
-        else:
-            total += (-1) * K
-    else:
-        pass
-
-else:
-    total = K * 1
-
-print(total)
+a,b,c,k = map(int,input().split())
+xa = min(a,k)
+k -= xa
+xb = min(b, k)
+k -= xb
+xc = k
+print(xa-xc)
