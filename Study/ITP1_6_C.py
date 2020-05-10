@@ -45,6 +45,6 @@ for _ in range(n):
     a[b-1][f-1][r-1] += v
 for i in range(4):
     for j in range(3):
-        print('',*a[i][j])
+        print('', *a[i][j])
     if i < 3:
         print('#'*20)
