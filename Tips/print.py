@@ -25,5 +25,5 @@ for a in arr:
 #  1 1 1
 
 # 参考
-# https: // note.nkmk.me/python-tuple-list-unpack/
-# https: // www.suzu6.net/posts/74-sort-2d-list-print/
+# https://note.nkmk.me/python-tuple-list-unpack/
+# https://www.suzu6.net/posts/74-sort-2d-list-print/

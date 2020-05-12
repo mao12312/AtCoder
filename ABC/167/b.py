@@ -29,3 +29,4 @@ xb = min(b, k)
 k -= xb
 xc = k
 print(xa-xc)
+# 線形計画問題
