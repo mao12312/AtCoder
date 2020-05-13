@@ -1,3 +1,4 @@
+# bit全探索
 # # answer
 # import sys
 # import numpy as np
@@ -48,15 +49,13 @@
 
 # print(prices_min if flag else '-1')
 
-
+import itertools
 import numpy as np
 
 N, M, X = map(int, input().split())
 CAs = [list(map(int, input().split())) for i in range(N)]
 
-Cs = np.array([ca[0] for ca in CAs])
-As = [np.array(ca[1:]) for ca in CAs]
+Cs = [ca[0] for ca in CAs]
+As = [ca[1:] for ca in CAs]
 
-print(Cs)
-print(As)
 
