@@ -1,1 +1,11 @@
-n,x = map(int,input().split())
+while True:
+    n, x = map(int, input().split())
+    ans = 0
+    if n == 0 & x == 0:
+        break
+    for i in range(1, n+1):
+        for j in range(i+1, n+1):
+            for k in range(j+1, n+1):
+                if i + j + k == x:
+                    ans += 1
+    print(ans)
