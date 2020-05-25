@@ -9,4 +9,4 @@ for i in range(n):
         for k in range(m):
             ANS[i][j] += A[i][k]*B[k][j]
 for i in ANS:
-    print(i)
+    print(*i)
