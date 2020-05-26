@@ -17,8 +17,6 @@ for row in range(C):
 for row in range(C):
     T[C][R] += T[row][R]
 
-for row in range(0, C+1):
-    print("%d" % (T[row][0]), end="")
-    for col in range(1, R+1):
-        print(" %d" % (T[row][col]), end="")
-    print()
+for row in T:
+    print(*row)
+
