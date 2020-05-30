@@ -1,4 +1,6 @@
-s = input()
+import sys
+
+s = sys.stdin.read().lower()
 table = {
     "a": 0,
     "b": 0,
@@ -28,5 +30,11 @@ table = {
     "z": 0,
 }
 
+for i in list(s):
+    if i in table:
+        table[i] += 1
+    else:
+        continue
+
 for i in table:
-    print(i,table[i])
+    print('{} : {}'.format(i,table[i]))
