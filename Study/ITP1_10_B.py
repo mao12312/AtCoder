@@ -2,8 +2,8 @@ import math
 a, b, C = map(int, input().split())
 
 S = a * b / 2 * math.sin(math.radians(C))
-c = math.sqrt(a ** 2 + b ** 2)
+c = math.sqrt(b**2 + a**2 - 2*b*a*math.cos(math.radians(C)))
 L = a + b + c
-h = a*math.tan(math.radians(C))
+h = S*2/a
 
-print(h)
+print(S, L, h, sep='\n')
