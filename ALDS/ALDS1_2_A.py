@@ -9,5 +9,5 @@ while flag:
             A[i], A[i-1] = A[i-1], A[i]
             flag = 1
             count += 1
-print(*A,sep=' ')
+print(*A, sep=' ')
 print(count)
