@@ -6,9 +6,8 @@ for i in arr:
         stack.append(stack.pop()+stack.pop())
     elif i == "-":
         stack.append(-(stack.pop()-stack.pop()))
-    elif i =="*":
+    elif i == "*":
         stack.append(stack.pop()*stack.pop())
     else:
         stack.append(int(i))
 print(stack[-1])
-
