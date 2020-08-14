@@ -30,7 +30,7 @@ C2 = C.copy()
 print(*BubbleSort(C, n), sep=' ')
 print("Stable")
 print(*SelectionSort(C2, n), sep=' ')
-if C ==C2:
+if C == C2:
     print("Stable")
 else:
     print("Not stable")

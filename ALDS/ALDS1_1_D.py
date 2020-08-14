@@ -15,7 +15,7 @@ n = int(input())
 p = [int(input()) for i in range(n)]
 minv = p[0]
 maxv = p[1] - p[0]
-for i in range(1,n):
-    maxv = max(p[i] - minv,maxv)
-    minv = min(minv,p[i])
+for i in range(1, n):
+    maxv = max(p[i] - minv, maxv)
+    minv = min(minv, p[i])
 print(maxv)
