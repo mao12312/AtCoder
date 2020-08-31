@@ -13,16 +13,14 @@ for i in range(1 << N):
     t = [0]*M
     c = 0
     for j in range(N):
-        if (i >> j)&1 == 0:
+        if (i >> j) & 1 == 0:
             continue
-        c +=Cs[j]
+        c += Cs[j]
         for k in range(M):
             t[k] += As[j][k]
-    if all(x >=X for x in t):
+    if all(x >= X for x in t):
         if ans == -1:
             ans = c
         else:
-            ans = min(ans,c)
+            ans = min(ans, c)
 print(ans)
-
-
