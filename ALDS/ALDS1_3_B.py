@@ -12,6 +12,10 @@ for i in range(n):
 
 print(p_q)
 
+
+# undone
+
+
 # head, tail = 0
 
 
